@@ -1,0 +1,23 @@
+{
+  "name": "mahjong-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Server-authoritative WebSocket server for the mahjong game. Reuses the browser engine.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "smoke": "tsx src/smoke.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
